@@ -1,0 +1,63 @@
+body {
+    background-image: linear-gradient(to right bottom, #197398, #428da6, #68a7b3, #8ec0c3, #b5d9d5);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrap {
+    background: #fff;
+    box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.2);
+
+    width: 480px;
+    height: fit-content;
+
+    border-radius: 4px;
+    padding: 36px;
+}
+
+.login-wrap .login-form {
+    width: 100%;
+    padding: 24px;
+}
+
+.login-wrap .login-form inpit[type="submit"] {
+    box-shadow: 0 2px 1px 0px #3F51B5;
+}
+
+.login-wrap .display-4 {
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0px 24px;
+    }
+
+    .login-wrap {
+        width: 100%;
+    }
+
+    .login-wrap .login-form {
+        padding: 0px;
+    }
+}
+
+/**
+ * Overrides
+ */
+.ui.icon.input > i.icon:after, .ui.icon.input > i.icon:before {
+    border-right: 1px dotted grey;
+}
+
+.ui.ui.ui.ui[class*="left icon"].input > input, .ui.ui.ui.ui[class*="left icon"].input > textarea {
+    padding-left: 3.671429em !important;
+}
+
+.ui.form .field > label {
+    margin: 0 0 .68571429rem 0 !important;
+}
