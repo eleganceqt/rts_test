@@ -39,7 +39,7 @@ class ApplicationController extends Controller
                 'extension' => $uploadedFile->extension(),
             ];
 
-            $application->file()->save((new File)->fill($attributes));
+            $application->file()->save(new File($attributes));
         }
 
         return response()->json(['status' => 'success']);
